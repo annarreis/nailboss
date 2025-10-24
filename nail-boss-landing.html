@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nail Boss – Pacotes para Nail Designers | Site + Automação de WhatsApp</title>
+  <meta name="description" content="Nail Boss: pacotes de site profissional + automação de WhatsApp para Nail Designers. Organize sua agenda, aumente a confiança e lote horários com leveza.">
+  <meta property="og:title" content="Nail Boss – Site + Automação para Nail Designers">
+  <meta property="og:description" content="Transforme seu estúdio em uma marca que inspira confiança e lota a agenda.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://placehold.co/1200x630/png?text=Nail+Boss">
+  <meta name="theme-color" content="#FAE9F0">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:wght@400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --rose-50:#FBF9FA;
+      --rose-100:#F7EEF2;
+      --rose-200:#EDD8E1;
+      --rose-300:#E3C2D0;
+      --rose-600:#B8577E;
+      --rose-700:#9D3E68;
+      --ink:#1B1B1B;
+    }
+    body{font-family:"Poppins",sans-serif;color:var(--ink);background:var(--rose-50);}  
+    .brand-script{font-family:"DM Serif Display",serif;letter-spacing:0.5px;}
+    .btn-primary{--bs-btn-bg:var(--rose-700);--bs-btn-border-color:var(--rose-700);--bs-btn-hover-bg:var(--rose-600);--bs-btn-hover-border-color:var(--rose-600);border-radius:50rem;}
+    .btn-outline-primary{--bs-btn-color:var(--rose-700);--bs-btn-border-color:var(--rose-700);--bs-btn-hover-bg:var(--rose-700);--bs-btn-hover-border-color:var(--rose-700);border-radius:50rem;}
+    .badge-soft{background:var(--rose-100);color:var(--rose-700);border:1px solid var(--rose-200)}
+    .soft-card{background:#fff;border:1px solid var(--rose-200);box-shadow:0 15px 40px rgba(0,0,0,.06);border-radius:1.25rem;padding:2rem;}
+    .hero{background:linear-gradient(135deg, var(--rose-100), rgba(255,255,255,.9));}
+    .section-label{font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;color:var(--rose-700);font-weight:600}
+    .price{font-size:2.6rem;font-weight:700;font-family:"DM Serif Display",serif;}
+    .ribbon{position:absolute;top:12px;right:-8px;background:var(--rose-700);color:#fff;padding:.35rem .75rem;border-radius:.25rem;box-shadow:0 8px 20px rgba(159,69,107,.25)}
+    .feature-icon{width:44px;height:44px;display:grid;place-items:center;background:var(--rose-100);border:1px solid var(--rose-200);border-radius:14px;color:var(--rose-700)}
+    .check{color:var(--rose-700)}
+    .footer{background:#fff;border-top:1px solid var(--rose-200)}
+    .whatsapp-floating{position:fixed;right:18px;bottom:18px;z-index:1030}
+    .whatsapp-floating .btn{box-shadow:0 10px 24px rgba(0,0,0,.15)}
+    .navbar{backdrop-filter:saturate(180%) blur(10px); background:rgba(255,255,255,.85)!important; border-bottom:1px solid var(--rose-200)}
+    .py-6{padding-top:4rem!important;padding-bottom:4rem!important}
+    .py-7{padding-top:5rem!important;padding-bottom:5rem!important}
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Service",
+    "name":"Nail Boss – Site + Automação de WhatsApp",
+    "description":"Pacotes para Nail Designers com site profissional, agenda integrada e automação de WhatsApp.",
+    "provider":{"@type":"Organization","name":"Nail Boss"},
+    "areaServed":"Brazil",
+    "offers":[
+      {"@type":"Offer","name":"Nail Boss Start","price":"197","priceCurrency":"BRL"},
+      {"@type":"Offer","name":"Nail Boss Pro","price":"297","priceCurrency":"BRL"},
+      {"@type":"Offer","name":"Nail Boss Deluxe","price":"597","priceCurrency":"BRL"}
+    ]
+  }
+  </script>
+</head>
+<body>
+  <!-- NAV -->
+  <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
+    <div class="container py-2">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <span class="brand-script h4 mb-0 me-2">Nail Boss</span>
+        <span class="badge badge-soft rounded-pill">para Nail Designers</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Abrir navegação">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+          <li class="nav-item"><a class="nav-link" href="#como-funciona">Como funciona</a></li>
+          <li class="nav-item"><a class="nav-link" href="#pacotes">Pacotes</a></li>
+          <li class="nav-item"><a class="nav-link" href="#faq">Dúvidas</a></li>
+          <li class="nav-item"><a class="btn btn-primary ms-lg-2" href="#cta" role="button">Quero meu pacote</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero py-7 text-center text-lg-start">
+    <div class="container py-6">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-7">
+                    <h1 class="brand-script display-4 mt-3">Sua agenda tão linda quanto suas unhas.</h1>
+          <p class="lead mt-3">Site profissional + automação de WhatsApp para <strong>Nail Designers</strong> que querem organização, mais agendamentos e clientes encantadas — com leveza e sofisticação.</p>
+          <div class="d-flex flex-wrap gap-3 mt-4">
+            <a href="#pacotes" class="btn btn-primary btn-lg px-4">Ver pacotes</a>
+            <a href="#como-funciona" class="btn btn-outline-primary btn-lg px-4">Como funciona</a>
+          </div>
+        </div>
+        <div class="col-lg-5 d-none d-lg-block">
+          
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- COMO FUNCIONA -->
+  <section id="como-funciona" class="py-6 py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-label">Leve e acolhedor</span>
+        <h2 class="brand-script mt-2">Como o Nail Boss ajuda você</h2>
+        <p class="text-muted">Você foca em cuidar das clientes. O site e a automação cuidam do resto.</p>
+      </div>
+      <div class="row g-4 g-lg-5">
+        <div class="col-md-6 col-lg-3">
+          <div class="soft-card rounded-4 p-4 h-100">
+            <div class="feature-icon mb-3"><i class="bi bi-chat-dots"></i></div>
+            <h5>Respostas automáticas</h5>
+            <p class="text-muted mb-0">Chega de repetir “qual o valor?”. O robô responde com carinho e clareza.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="soft-card rounded-4 p-4 h-100">
+            <div class="feature-icon mb-3"><i class="bi bi-clipboard2-check"></i></div>
+            <h5>Agenda sem bagunça</h5>
+            <p class="text-muted mb-0">Cliente escolhe o horário e você recebe tudo certinho.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="soft-card rounded-4 p-4 h-100">
+            <div class="feature-icon mb-3"><i class="bi bi-patch-check"></i></div>
+            <h5>Mais confiança</h5>
+            <p class="text-muted mb-0">Site com seu nome, avaliações e portfólio valorizam seu trabalho.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="soft-card rounded-4 p-4 h-100">
+            <div class="feature-icon mb-3"><i class="bi bi-graph-up"></i></div>
+            <h5>Mais agendamentos</h5>
+            <p class="text-muted mb-0">Posicionamento profissional que permite cobrar melhor.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PACOTES -->
+  <section id="pacotes" class="py-5 bg-white">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-label">Escada de preços</span>
+        <h2 class="brand-script mt-2">Escolha seu pacote</h2>
+        <p class="text-muted">Três opções para fases diferentes – todas com a mesma energia boa.</p>
+      </div>
+
+      <div class="row g-4 g-lg-5 position-relative">
+        <!-- START -->
+        <div class="col-md-6 col-lg-4">
+          <div class="soft-card rounded-4 p-4 h-100 d-flex flex-column">
+            <span class="badge badge-soft align-self-start mb-2">Entrada</span>
+            <h4 class="brand-script">Nail Boss Start</h4>
+            <p class="text-muted">Link bonito e organizado para começar com presença profissional.</p>
+            <ul class="list-unstyled small flex-grow-1">
+              <li class="mb-2"><i class="bi bi-check2 check me-2"></i>Página única estilo "link na bio"</li>
+              <li class="mb-2"><i class="bi bi-check2 check me-2"></i>Serviços + preços organizados</li>
+              <li class="mb-2"><i class="bi bi-check2 check me-2"></i>Botão “Chamar no WhatsApp”</li>
+              <li class="mb-2"><i class="bi bi-check2 check me-2"></i>Mini galeria (até 6 fotos)</li>
+            </ul>
+            <div class="mt-3">
+              <div class="price">R$197</div>
+              <p class="text-muted mb-3">à vista ou 3x de R$65</p>
+              <a href="#cta" class="btn btn-outline-primary w-100">Quero o Start</a>
+            </div>
+          </div>
+        </div>
+        <!-- PRO -->
+        <div class="col-md-6 col-lg-4">
+          <div class="soft-card rounded-4 p-4 h-100 position-relative d-flex flex-column">
+            <span class="ribbon"><i class="bi bi-star-fill me-1"></i>Mais pedido</span>
+            <span class="badge badge-soft align-self-start mb-2">Intermediário</span>
+            <h4 class="brand-script">Nail Boss Pro</h4>
+            <p class="text-muted">A máquina de agenda automática: site completo + automação no Whats.</p>
+            <ul class="list-unstyled small flex-grow-1">
+              <li class="mb-2"><i class="bi bi-check2 check me-2"></i>Tudo do Start</li>
+              <li class="mb-2"><i class="bi bi-check2 check me-2"></i>Site com até 4 sessões</li>
+              <li class="mb-2"><i class="bi bi-check2 check me-2"></i>Agendamento integrado</li>
+              <li class="mb-2"><i class="bi bi-check2 check me-2"></i>Automação: valores, endereço e políticas</li>
+              <li class="mb-2"><i class="bi bi-check2 check me-2"></i>SEO local e avaliações</li>
+            </ul>
+            <div class="mt-3">
+              <div class="price">R$297</div>
+              <p class="text-muted mb-3">à vista ou 3x de R$99</p>
+              <a href="#cta" class="btn btn-primary w-100">Quero o Pro</a>
+            </div>
+          </div>
+        </div>
+        <!-- DELUXE -->
+        <div class="col-md-6 col-lg-4">
+          <div class="soft-card rounded-4 p-4 h-100 d-flex flex-column">
+            <span class="badge badge-soft align-self-start mb-2">Premium</span>
+            <h4 class="brand-script">Nail Boss Deluxe</h4>
+            <p class="text-muted">Para virar referência: identidade, funil no Whats e fidelização.</p>
+            <ul class="list-unstyled small flex-grow-1">
+              <li class="mb-2"><i class="bi bi-check2 check me-2"></i>Tudo do Pro</li>
+              <li class="mb-2"><i class="bi bi-check2 check me-2"></i>Branding express (paleta e tipografia)</li>
+              <li class="mb-2"><i class="bi bi-check2 check me-2"></i>Bot mais completo (menu guiado)</li>
+              <li class="mb-2"><i class="bi bi-check2 check me-2"></i>Link de avaliação pós-serviço</li>
+              <li class="mb-2"><i class="bi bi-check2 check me-2"></i>Banner promocional editável</li>
+            </ul>
+            <div class="mt-3">
+              <div class="price">R$597</div>
+              <p class="text-muted mb-3">até 6x no cartão</p>
+              <a href="#cta" class="btn btn-outline-primary w-100">Quero o Deluxe</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Comparação -->
+      <div class="soft-card rounded-4 p-4 mt-5">
+        <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-3">
+          <h5 class="mb-0 brand-script">Comparativo rápido</h5>
+          <small class="text-muted">Escolha o que faz sentido para sua fase.</small>
+        </div>
+        <div class="table-responsive">
+          <table class="table align-middle">
+            <thead>
+              <tr>
+                <th>Recursos</th>
+                <th>Start</th>
+                <th>Pro</th>
+                <th>Deluxe</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Página/link na bio</td>
+                <td><i class="bi bi-check2 check"></i></td>
+                <td><i class="bi bi-check2 check"></i></td>
+                <td><i class="bi bi-check2 check"></i></td>
+              </tr>
+              <tr>
+                <td>Site multi-seção</td>
+                <td></td>
+                <td><i class="bi bi-check2 check"></i></td>
+                <td><i class="bi bi-check2 check"></i></td>
+              </tr>
+              <tr>
+                <td>Agendamento integrado</td>
+                <td></td>
+                <td><i class="bi bi-check2 check"></i></td>
+                <td><i class="bi bi-check2 check"></i></td>
+              </tr>
+              <tr>
+                <td>Automação Whats básica</td>
+                <td></td>
+                <td><i class="bi bi-check2 check"></i></td>
+                <td><i class="bi bi-check2 check"></i></td>
+              </tr>
+              <tr>
+                <td>Funil Whats avançado</td>
+                <td></td>
+                <td></td>
+                <td><i class="bi bi-check2 check"></i></td>
+              </tr>
+              <tr>
+                <td>Branding express</td>
+                <td></td>
+                <td></td>
+                <td><i class="bi bi-check2 check"></i></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEPOIMENTO / ANTES DEPOIS -->
+  <section class="py-5" aria-label="Antes e depois + depoimentos">
+    <div class="container">
+      <div class="row g-4 g-lg-5 align-items-center">
+        <div class="col-lg-6">
+          <div class="soft-card rounded-4 p-4 h-100">
+            <h5 class="brand-script mb-3">Antes x Depois</h5>
+            <div class="row small g-3">
+              <div class="col-6">
+                <div class="p-3 border rounded-3 h-100">
+                  <strong>Antes</strong>
+                  <ul class="mt-2 mb-0 ps-3">
+                    <li>WhatsApp lotado e desorganizado</li>
+                    <li>Demora na resposta</li>
+                    <li>Insegurança para cobrar mais</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="p-3 border rounded-3 h-100 bg-light">
+                  <strong>Depois</strong>
+                  <ul class="mt-2 mb-0 ps-3">
+                    <li>Automação gentil 24/7</li>
+                    <li>Agendamentos diretos no site</li>
+                    <li>Mais autoridade e confiança</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="soft-card rounded-4 p-4">
+            <div class="d-flex align-items-start gap-3">
+              <img src="nailboss.jpeg" class="rounded-circle" alt="Foto da cliente" width="72" height="72">
+              <div>
+                <p class="mb-1">“Eu vivia perdida no Whats. Agora o site responde tudo com carinho e a agenda ficou muito mais organizada. Consegui até ajustar meus preços sem medo.”</p>
+                <small class="text-muted">— Damaris Lima, Nail Designer</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="py-5 bg-white">
+    <div class="container">
+      <div class="text-center mb-4">
+        <span class="section-label">Dúvidas</span>
+        <h3 class="brand-script mt-2">Perguntas frequentes</h3>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <div class="soft-card rounded-4 p-4 h-100">
+            <h6>Em quanto tempo fica pronto?</h6>
+            <p class="text-muted mb-0">Depende do pacote e do material (fotos/textos). Geralmente, o Start sai muito rápido; Pro e Deluxe exigem alguns ajustes finos.</p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="soft-card rounded-4 p-4 h-100">
+            <h6>Preciso comprar domínio?</h6>
+            <p class="text-muted mb-0">É opcional, mas recomendado para credibilidade. Posso orientar ou configurar para você.</p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="soft-card rounded-4 p-4 h-100">
+            <h6>Qual agenda é utilizada?</h6>
+            <p class="text-muted mb-0">Integro Google Agenda, Calendly ou outro de sua preferência.</p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="soft-card rounded-4 p-4 h-100">
+            <h6>E a automação no WhatsApp?</h6>
+            <p class="text-muted mb-0">Configuro respostas automáticas educadas para valores, endereço, duração e políticas. No Deluxe, criamos um menu guiado.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="cta" class="py-6 py-5">
+    <div class="container">
+      <div class="soft-card rounded-4 p-4 p-lg-5 text-center">
+        <span class="section-label">Pronta para simplificar?</span>
+        <h2 class="brand-script mt-2">Vamos deixar sua agenda tão linda quanto seu trabalho.</h2>
+        <p class="text-muted">Clique abaixo para me chamar no WhatsApp e escolher seu pacote. Vou te atender com todo carinho 💗</p>
+        <a class="btn btn-primary btn-lg px-4" href="https://wa.me/5511948918144?text=Oi!%20Quero%20saber%20mais%20sobre%20os%20pacotes%20Nail%20Boss" target="_blank" rel="noopener"><i class="bi bi-whatsapp me-2"></i>Falar no WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer py-4">
+    <div class="container d-flex flex-column flex-lg-row justify-content-between align-items-center gap-2">
+      <div class="small">© <span id="year"></span> Nail Boss. Todos os direitos reservados.</div>
+      <div class="small">Feito com 💗 para Nail Designers • <a href="#" class="link-secondary text-decoration-none">Políticas</a></div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <div class="whatsapp-floating">
+    <a class="btn btn-success btn-lg rounded-circle" aria-label="Abrir conversa no WhatsApp" href="https://wa.me/5511948918144?text=Oi!%20Quero%20o%20Nail%20Boss" target="_blank" rel="noopener">
+      <i class="bi bi-whatsapp"></i>
+    </a>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
